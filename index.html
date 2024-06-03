@@ -27,108 +27,13 @@
       </div>
     </header>
     <main>
-      <section class="py-3 text-center container">
-        <div class="row">
-          <div id="cartoapp"></div>
-        </div>
-        <div class="row py-2">
-          <div id="biomeselect">
-            <div id="biome-forest" class="biome forest" onClick="selectBiome(this.id)"></div>
-            <div id="biome-village" class="biome village" onClick="selectBiome(this.id)"></div>
-            <div id="biome-river" class="biome river" onClick="selectBiome(this.id)"></div>
-            <div id="biome-field" class="biome field" onClick="selectBiome(this.id)"></div>
-            <div id="biome-ambush" class="biome ambush" onClick="selectBiome(this.id)"></div>
-          </div>
-        </div>
-        <div class="row py-2">
-          <div id="victorypoints"></div>
-        </div>
-      </section>
-      <section class="text-center container">
-        <div>
-          <h3>Score</h3>
-          <button class="btn" onClick="getScores()">Calculate</button>
-        </div>
-        <div class="row gx-0">
-          <div class="col-3">
-            <div class="container scorecard">
-              <span class="season">Spring</span>
-              <table class="table scores">
-                <tbody>
-                  <tr>
-                    <td class="p-0 m-0"><input type="text" placeholder="A" id="spring-d1" size="1" class="score"></td>
-                    <td class="p-0 m-0"><input type="text" placeholder="B" id="spring-d2" size="1" class="score"></td>
-                    <td class="p-0 m-0" rowspan="2"><span id="spring-score" class="subscore">0</span></td>
-                  </tr>
-                  <tr>
-                    <td class="p-0 m-0"><input type="text" placeholder="O" id="spring-vp" size="1" class="score"></td>
-                    <td class="p-0 m-0"><input type="text" placeholder="X" id="spring-a" size="1" class="score"></td>
-                  </tr>
-                </tbody>
-              </table>  
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="container scorecard">
-              <span class="season">Summer</span>
-              <table class="table scores">
-                <tbody>
-                  <tr>
-                    <td class="p-0 m-0"><input type="text" placeholder="B" id="summer-d1" size="1" class="score"></td>
-                    <td class="p-0 m-0"><input type="text" placeholder="C" id="summer-d2" size="1" class="score"></td>
-                    <td class="p-0 m-0" rowspan="2"><span id="summer-score" class="subscore">0</span></td>
-                  </tr>
-                  <tr>
-                    <td class="p-0 m-0"><input type="text" placeholder="O" id="summer-vp" size="1" class="score"></td>
-                    <td class="p-0 m-0"><input type="text" placeholder="X" id="summer-a" size="1" class="score"></td>
-                  </tr>
-                </tbody>
-              </table>  
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="container scorecard">
-              <span class="season">Fall</span>
-              <table class="table scores">
-                <tbody>
-                  <tr>
-                    <td class="p-0 m-0"><input type="text" placeholder="C" id="fall-d1" size="1" class="score"></td>
-                    <td class="p-0 m-0"><input type="text" placeholder="D" id="fall-d2" size="1" class="score"></td>
-                    <td class="p-0 m-0" rowspan="2"><span id="fall-score" class="subscore">0</span></td>
-                  </tr>
-                  <tr>
-                    <td class="p-0 m-0"><input type="text" placeholder="O" id="fall-vp" size="1" class="score"></td>
-                    <td class="p-0 m-0"><input type="text" placeholder="X" id="fall-a" size="1" class="score"></td>
-                  </tr>
-                </tbody>
-              </table>  
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="container scorecard">
-              <span class="season">Winter</span>
-              <table class="table scores">
-                <tbody>
-                  <tr>
-                    <td class="p-0 m-0"><input type="text" placeholder="D" id="winter-d1" size="1" class="score"></td>
-                    <td class="p-0 m-0"><input type="text" placeholder="A" id="winter-d2" size="1" class="score"></td>
-                    <td class="p-0 m-0" rowspan="2"><span id="winter-score" class="subscore">0</span></td>
-                  </tr>
-                  <tr>
-                    <td class="p-0 m-0"><input type="text" placeholder="O" id="winter-vp" size="1" class="score"></td>
-                    <td class="p-0 m-0"><input type="text" placeholder="X" id="winter-a" size="1" class="score"></td>
-                  </tr>
-                </tbody>
-              </table>  
-            </div>
-          </div>
-
-        </div>
-      </section>
+	    <h1>Select a map:</h1>
+	    <ul>
+		    <li><a href="game.html?map=basemap">Basic Map</a></li>
+		    <li><a href="game.html?map=chasm">Chasm Map</a></li>
+	    </ul>
     </main>
 
-    
-    <script type="text/javascript" src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
